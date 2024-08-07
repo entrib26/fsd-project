@@ -1,26 +1,69 @@
-function displayTime() {
-  const date = new Date();
-  let hours = date.getHours();
-  let minutes = date.getMinutes();
-  let seconds = date.getSeconds();
-  let session = "AM";
-  if (hours > 12) {
-    hours -= 12;
-    session = "PM";
-  }
-  // ?:
-  //ternary operator condition ? true : false
-  hours = hours >= 10 ? hours : "0" + hours;
-  minutes = minutes >= 10 ? minutes : "0" + minutes;
-  seconds = seconds >= 10 ? seconds : "0" + seconds;
+// document.querySelector("h1").innerText = "Hello world";
+// document.querySelector("#content").innerText = "Hello world";
+// document.querySelector(".container").innerText = "Hello world";
+// const container = document.querySelector(".container");
+// const h1 = document.createElement("h1");
 
-  const time = `${hours}:${minutes}:${seconds} ${session}`;
+// h1.innerText = "Hey";
 
-  document.getElementById("time").innerText = time;
-}
+// container.appendChild(h1);
 
-setInterval(() => {
-  displayTime();
-}, 1000);
+// document.querySelectorAll("h1").forEach((item) => {
+//   item.innerText = "From the traversing";
+// });
 
-displayTime();
+// let name = "    jack daniel.     ";
+
+// console.log(name.trim());
+
+// const button = document.querySelector("button");
+
+// button.addEventListener("click", () => {
+//   console.log("Clicked");
+// });
+
+// document.querySelectorAll("*").forEach((elem) => {
+//   elem.addEventListener(
+//     "click",
+//     () => {
+//       console.log(`Capturing: ${elem.tagName}`);
+//     },
+//     true
+//   );
+//   elem.addEventListener("click", () => {
+//     console.log(`Bubbling: ${elem.tagName}`);
+//   });
+// });
+// document.querySelector("#submitBtn").addEventListener("click", (event) => {
+//   event.preventDefault();
+//   console.log("Form submitted");
+// });
+
+// document.querySelector("form").addEventListener("submit", () => {
+//   console.log("Form submitted");
+// });
+
+// setTimeout(() => {
+//   console.log("First One");
+//   setTimeout(() => {
+//     console.log("Second One");
+//     setTimeout(() => {
+//       console.log("Third One");
+//       setTimeout(() => {
+//         console.log("Fourth One");
+//       }, 1000);
+//     }, 1000);
+//   }, 1000);
+// }, 1000);
+
+// const data = new Promise((resolve, reject) => {
+//   resolve(1);
+// });
+
+// data
+//   .then((info) => {
+//     return info + 10;
+//   })
+//   .then((value) => {
+//     console.log(value);
+//   });
